@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Friend Finder!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+</head>
+
+<body style="font-family: Ubuntu; background: url('/public/media/bg.png')">
+	<div class="container">
+		<h2 class="text-center">Survey Questions</h2>
+		<hr style="border-color: #f0ad4e">
+
+		<h3 style="padding: 3px 0px"><strong>Personal Info</strong></h3>
+		<h4>Name (Required):</h4>
+		<input type="text" id="name" class="form-control" required>
+		<h4>Link to Photo Image (Required):</h4>
+		<input type="text" id="photo" class="form-control" required>
+		<hr style="border-color: #f0ad4e">
+
+		<h3><strong>Question 1</strong></h3>
+		<h4>You often re-live gaming experiences or think about future ones.</h4>
+		<select class="form-control" id="q1">
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<h3><strong>Question 2</strong></h3>
+		<h4>Gaming stories are one of the most exciting topics of conversation for you.</h4>
+		<select class="form-control" id="q2">
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<h3><strong>Question 3</strong></h3>
+		<h4>You get angry when someone or something interrupts a game.</h4>
+		<select class="form-control" id="q3">
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<h3><strong>Question 4</strong></h3>
+		<h4>When upset, you soothe yourself with games or plans to game.</h4>
+		<select class="form-control" id="q4">
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<h3><strong>Question 5</strong></h3>
+		<h4>You sometimes lose hours of sleep to gaming.</h4>
+		<select class="form-control" id="q5">
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<h3><strong>Question 6</strong></h3>
+		<h4>You've called in sick or late to work or skipped classes to game.</h4>
+		<select class="form-control" id="q6">
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<h3><strong>Question 7</strong></h3>
+		<h4>Many of your friends are gamers.</h4>
+		<select class="form-control" id="q7">
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<h3><strong>Question 8</strong></h3>
+		<h4>You read and watch many game-related articles and videos.</h4>
+		<select class="form-control" id="q8">
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<h3><strong>Question 9</strong></h3>
+		<h4>You have intense feelings (highs and lows) while gaming.</h4>
+		<select class="form-control" id="q9">
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<h3><strong>Question 10</strong></h3>
+		<h4>You are a member of the Glorious PC Gaming Master Race.</h4>
+		<select class="form-control" id="q10">
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<br><br>
+		<button type="submit" class="btn btn-lg btn-warning btn-block" id="submit">Submit</button>
+		<hr style="border-color: #f0ad4e">
+
+		<footer class="footer">
+			<p class="text-center"><a href="/api/friends">API Friends List</a></p>
+		</footer>
+	</div>
+
+	<div id="results" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" style="color: #f0ad4e">X</button>
+					<h2 class="modal-title"><strong>1337est Match</strong></h2>
+				</div>
+				<div class="modal-body">
+					<h2 id="matchName" class="text-center"></h2>
+					<img id="matchPhoto" src="" class="center-block" style="width: 400px; border: 7px ridge #f0ad4e">
+					<br>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="modalClose" class="btn btn-warning" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+	// Grabs the URL of the website.
+	var currentURL = window.location.origin;
+
+	// Form Validation
+	function validateForm() {
+		var isValid = true;
+		$(".form-control").each(function() {
+	    	if ($(this).val() === '')
+	        	isValid = false;
+	  	});
+	  	return isValid;
+	};
+
+	function add(a, b) {
+		return a + b;
+	};
+
+	$("#submit").on('keypress', function(e) {
+		return e.which !== 13;
+	});
+
+    // Captures the form inputs.
+    $("#submit").on("click", function() {
+		// If all fields are filled:
+		if (validateForm() === true) {
+			// Creates an object that stores the user's data.
+	    	var userData = {
+	    		name: $("#name").val(),
+	    		photo: $("#photo").val(),
+	    		choices: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+	    	};
+
+	    	$.get(currentURL + "/api/friends", function(data) {
+	    		var sumsArray = [];
+				var dataLength = data.length;
+
+	    		(function differenceBetweenChoices(index) {
+	    			var differences = [];
+	    			for (var i=0; i<userData.choices.length; i++) {
+	    				differences.push(Math.abs(userData.choices[i] - data[index].choices[i]));
+	    			}
+	    			var sum = differences.reduce(add, 0);
+					sumsArray.push(sum);
+					index++;
+					if (index < dataLength) {
+						differenceBetweenChoices(index);
+					}
+	    		})(0);
+
+	    		var indexOfSmallestSum = sumsArray.indexOf(Math.min.apply(Math, sumsArray));
+
+	    		$("#matchName").text(data[indexOfSmallestSum].name);
+	    		$("#matchPhoto").attr("src", data[indexOfSmallestSum].photo);
+	    		$("#results").modal("show");
+	    	}).done(function(data) {
+		    	// Posts the data to the /api/friends page.
+		    	$.post(currentURL + "/api/friends", userData, function(data) {});
+			});
+
+		} else {
+			alert("Before submitting, please fill out all the fields!");
+		}
+    });
+
+	$(".close, #modalClose").on("click", function() {
+		window.location = currentURL + "/";
+	});
+</script>
+</body>
+
+</html>
